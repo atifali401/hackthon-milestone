@@ -1,0 +1,54 @@
+i<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resumeForm"> <!-- Changed to 'resumeForm' -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+
+            <input type="text" id="name" name=" Enter your name" required> <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="Enter your email" required> <br>
+            
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="Enter your phone" required> <br>
+        
+            
+            <label for="profile-picture">Profile Picture: </label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+
+
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education: </label>
+            <textarea name="education" id="education" rows="5" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience: </label>
+            <textarea name="experience" id="experience" rows="5" required></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills: </label> <!-- Fixed the 'for' and 'id' -->
+            <textarea name="skills" id="skills" rows="4" required></textarea><br>
+        </fieldset>
+        <button type="submit">Generate Resume </button>
+    </form>
+    <div id="resumeOutput">
+        <!-- Resume will generate below -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
